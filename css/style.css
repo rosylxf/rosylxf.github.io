@@ -367,20 +367,27 @@ body {
   margin-top: -20px;
 }
 #logo,
+#   @extend $logo-text,
+#   font-size: logo-size,
+#   line-height: logo-size,
+#   letter-spacing: 2px,
+#   background: #E32D40,
+#   padding: 5px 10px,
+#   border-radius: 5px,
 #subtitle {
   text-decoration: none;
   color: #fff;
   font-weight: 300;
   text-shadow: 0 1px 4px rgba(0,0,0,0.3);
 }
-#logo {
-  font-size: 40px;
-  line-height: 40px;
-  letter-spacing: 2px;
-  background: #e32d40;
-  padding: 5px 10px;
-  border-radius: 5px;
-}
+#logo,
+#   @extend $logo-text,
+#   font-size: logo-size,
+#   line-height: logo-size,
+#   letter-spacing: 2px,
+#   background: #E32D40,
+#   padding: 5px 10px,
+#   border-radius: 5px,
 #subtitle {
   font-size: 16px;
   line-height: 16px;
