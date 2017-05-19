@@ -6,17 +6,17 @@
   
   <title>线性代数读书笔记 | nonob</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第一章、向量，矩阵和行列式将n维向量x乘以 m*n 矩阵A， 能得到m维向量 y = Ax。也就是说，置顶了矩阵A，就确定了从向量到另外一个向量的映射。实际上，这才是矩阵最重要的机能。 零矩阵：所有元素都是0的矩阵，记为O，\\(O_m_,_n\\) 来表示 m*n 零矩阵， \\(O_n\\)表示n阶方阵。\(O2,_3 = \begin{pmatrix}0 &amp;amp;0  &amp;amp;0 \ 0">
+  <meta name="description" content="第一章、向量，矩阵和行列式将n维向量x乘以 m*n 矩阵A， 能得到m维向量 y = Ax。也就是说，置顶了矩阵A，就确定了从向量到另外一个向量的映射。实际上，这才是矩阵最重要的机能。  零矩阵：所有元素都是0的矩阵，记为O，$O_{m,n}$ 来表示 $m\ast n$零矩阵， \(O_n\) 表示n阶方阵  2*3零矩阵 $O_{2,3}= \begin{pmatrix}0 &amp;amp;0  &amp;">
 <meta name="keywords" content="读书笔记,线性代数">
 <meta property="og:type" content="article">
 <meta property="og:title" content="线性代数读书笔记">
 <meta property="og:url" content="http://www.nonob.me/2017/05/13/线性代数读书笔记/index.html">
 <meta property="og:site_name" content="nonob">
-<meta property="og:description" content="第一章、向量，矩阵和行列式将n维向量x乘以 m*n 矩阵A， 能得到m维向量 y = Ax。也就是说，置顶了矩阵A，就确定了从向量到另外一个向量的映射。实际上，这才是矩阵最重要的机能。 零矩阵：所有元素都是0的矩阵，记为O，\\(O_m_,_n\\) 来表示 m*n 零矩阵， \\(O_n\\)表示n阶方阵。\(O2,_3 = \begin{pmatrix}0 &amp;amp;0  &amp;amp;0 \ 0">
-<meta property="og:updated_time" content="2017-05-19T07:43:19.000Z">
+<meta property="og:description" content="第一章、向量，矩阵和行列式将n维向量x乘以 m*n 矩阵A， 能得到m维向量 y = Ax。也就是说，置顶了矩阵A，就确定了从向量到另外一个向量的映射。实际上，这才是矩阵最重要的机能。  零矩阵：所有元素都是0的矩阵，记为O，$O_{m,n}$ 来表示 $m\ast n$零矩阵， \(O_n\) 表示n阶方阵  2*3零矩阵 $O_{2,3}= \begin{pmatrix}0 &amp;amp;0  &amp;">
+<meta property="og:updated_time" content="2017-05-19T09:56:02.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="线性代数读书笔记">
-<meta name="twitter:description" content="第一章、向量，矩阵和行列式将n维向量x乘以 m*n 矩阵A， 能得到m维向量 y = Ax。也就是说，置顶了矩阵A，就确定了从向量到另外一个向量的映射。实际上，这才是矩阵最重要的机能。 零矩阵：所有元素都是0的矩阵，记为O，\\(O_m_,_n\\) 来表示 m*n 零矩阵， \\(O_n\\)表示n阶方阵。\(O2,_3 = \begin{pmatrix}0 &amp;amp;0  &amp;amp;0 \ 0">
+<meta name="twitter:description" content="第一章、向量，矩阵和行列式将n维向量x乘以 m*n 矩阵A， 能得到m维向量 y = Ax。也就是说，置顶了矩阵A，就确定了从向量到另外一个向量的映射。实际上，这才是矩阵最重要的机能。  零矩阵：所有元素都是0的矩阵，记为O，$O_{m,n}$ 来表示 $m\ast n$零矩阵， \(O_n\) 表示n阶方阵  2*3零矩阵 $O_{2,3}= \begin{pmatrix}0 &amp;amp;0  &amp;">
   
   
     <link rel="icon" href="/favicon.png">
@@ -108,17 +108,23 @@ ga('send', 'pageview');
     <div class="article-entry" itemprop="articleBody">
       
         <h3 id="第一章、向量，矩阵和行列式"><a href="#第一章、向量，矩阵和行列式" class="headerlink" title="第一章、向量，矩阵和行列式"></a>第一章、向量，矩阵和行列式</h3><p>将n维向量x乘以 m*n 矩阵A， 能得到m维向量 y = Ax。也就是说，置顶了矩阵A，就确定了从向量到另外一个向量的映射。实际上，这才是矩阵最重要的机能。</p>
-<p>零矩阵：所有元素都是0的矩阵，记为O，<code>\\(O_m_,_n\\)</code> 来表示 m*n 零矩阵， <code>\\(O_n\\)</code>表示n阶方阵。<br>\(O<em>2</em>,_3 = \begin{pmatrix}0 &amp;0  &amp;0 \ 0 &amp;0  &amp;0 \end{pmatrix}\)   \(O_3 = \begin{pmatrix}0 &amp;0  &amp;0 \ 0 &amp;0  &amp;0 \ 0 &amp;0  &amp;0 \end{pmatrix}\)<br>单位矩阵<br>对角矩阵</p>
+<p><strong> 零矩阵：所有元素都是0的矩阵，记为O，$O_{m,n}$ 来表示 $m\ast n$零矩阵， \(O_n\) 表示n阶方阵 </strong></p>
+<p>2*3零矩阵 $<br>O_{2,3}= \begin{pmatrix}<br>0 &amp;0  &amp;0 \\<br>0&amp;0  &amp;0<br>\end{pmatrix}<br>$       3阶零矩阵 $<br>O_3 = \begin{pmatrix}<br>0 &amp;0  &amp;0 \\<br>0 &amp;0  &amp;0 \\<br>0 &amp;0  &amp;0<br>\end{pmatrix}<br>$</p>
+<p><strong> 单位矩阵：除了”\“(从左上到右下)方向的对角元素是1，其余元素都是0，则该矩阵称为单位矩阵，记为 $I$ ,要强调矩阵规模的时候用 $I_n$ 表示n阶单位矩阵</strong></p>
+<p>3阶单位矩阵 $<br>I_3 = \begin{pmatrix}<br>1 &amp;0  &amp;0 \\<br>0 &amp;1  &amp;0 \\<br>0 &amp;0  &amp;1<br>\end{pmatrix}<br>$       </p>
+<p>注意：所有元素都为1的矩阵并非单位矩阵<br>单位矩阵性质：<br>对于任意向量 $x$，都有 $Ix=x$<br>对于任意矩阵 $A$,   $AI=A;   IA=A$</p>
+<p><strong>对角矩阵：在方阵中，”\“(从左上到右下)方向的对角线上的值称为对角元素，对角元素以外的元素称为非对角元素，非对角元素全为0的矩阵称为对角矩阵</strong></p>
+<p>$<br>\begin{pmatrix}<br>5 &amp;0  &amp;0 \\<br>0 &amp;9  &amp;0 \\<br>0 &amp;0  &amp;8<br>\end{pmatrix}<br>$</p>
 <h3 id="第二章、秩，逆矩阵，线性方程组—溯因推理"><a href="#第二章、秩，逆矩阵，线性方程组—溯因推理" class="headerlink" title="第二章、秩，逆矩阵，线性方程组—溯因推理"></a>第二章、秩，逆矩阵，线性方程组—溯因推理</h3><h3 id="第三章、LU分解"><a href="#第三章、LU分解" class="headerlink" title="第三章、LU分解"></a>第三章、LU分解</h3>
       
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://www.nonob.me/2017/05/13/线性代数读书笔记/" data-id="cj2ncpnrg0000eqq8bv4535fs" class="article-share-link" data-share="baidu" data-title="线性代数读书笔记">分享到</a>
+        <a data-url="http://www.nonob.me/2017/05/13/线性代数读书笔记/" data-id="cj2ncpnrg0000eqq8bv4535fs" class="article-share-link" data-share="baidu" data-title="线性代数读书笔记">Share</a>
       
 
       
-        <a href="http://www.nonob.me/2017/05/13/线性代数读书笔记/#disqus_thread" class="article-comment-link">評論</a>
+        <a href="http://www.nonob.me/2017/05/13/线性代数读书笔记/#disqus_thread" class="article-comment-link">Comments</a>
       
 
       
@@ -131,7 +137,7 @@ ga('send', 'pageview');
 <nav id="article-nav">
   
     <a href="/2017/05/17/机器学习资源总结/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">下一篇</strong>
+      <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
           机器学习资源总结
@@ -141,7 +147,7 @@ ga('send', 'pageview');
   
   
     <a href="/2017/05/13/对数学公式的支持/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">上一篇</strong>
+      <strong class="article-nav-caption">Older</strong>
       <div class="article-nav-title">对数学公式的支持</div>
     </a>
   
@@ -180,7 +186,7 @@ ga('send', 'pageview');
 </nav>
   <!-- totop start -->
 <div id="totop">
-<a title="返回頂部"><img src="/img/scrollup.png"/></a>
+<a title="totop"><img src="/img/scrollup.png"/></a>
 </div>
 
 <!-- totop end -->
